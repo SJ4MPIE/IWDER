@@ -9,9 +9,16 @@
     margin: auto;
 }
 
-h1, h2, p, b, a{
+h1 {
+    font-size: 28px;
+}
+
+
+h1, h2, p{
+    font-family: sans-serif;
     justify-content: center;
     text-align: center;
+    margin: 10px;
 }
 
 figure {
@@ -43,6 +50,7 @@ ul li {
 .mobile_nav li {
     color: #fff;
     margin:auto;
+    font-family: sans-serif;
 }
 
 .mobile_nav li a {
