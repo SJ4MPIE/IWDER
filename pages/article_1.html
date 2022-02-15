@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,50 @@
     <title>A UX designer walks into a Tesla Bar</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <nav class="desktop_nav">
-        <ul>
-            <li><a href="../index.html">UX design is becoming a commodity </a></li>
-            <li><a href="article_1.html">A UX designer walks into a Tesla Bar</a></li>
-            <li><a href="article_2.html">Prove yourself wrong</a></li>
-          </ul>
+    <header>
+        <nav class="desktop_nav">
+            <ul>
+                <li><a href="../index.html">UX design is becoming a commodity </a></li>
+                <li><a href="article_1.html">A UX designer walks into a Tesla Bar</a></li>
+                <li><a href="article_2.html">Prove yourself wrong</a></li>
+            </ul>
         </nav>
-    </nav>
-    <nav class="mobile_nav">
-        <ul>
-            <li><a href="../index.html">UX design is becoming a commodity </a></li>
-            <li><a href="article_1.html">A UX designer walks into a Tesla Bar</a></li>
-            <li><a href="article_2.html">Prove yourself wrong</a></li>
-          </ul>
         </nav>
+        <nav class="mobile_nav">
+            <ul>
+                <li><a href="../index.html">UX design is becoming a commodity </a></li>
+                <li><a href="article_1.html">A UX designer walks into a Tesla Bar</a></li>
+                <li><a href="article_2.html">Prove yourself wrong</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <article>
             <section>
                 <h1>A UX designer walks into a Tesla Bar</h1>
                 <p>
                     I borrowed a friend’s Tesla 3 yesterday. About 5 minutes into the ride,
-                    the windshield started fogging up. I couldn’t find the defroster on the 
-                    large control screen Teslas are so famous for. In desperation, I tapped 
-                    the CAR icon but that took me to the settings screen which ended up 
-                    being a dead end. Frustrated, I opened the side windows to clear the windshield. 
-                    While pushing every button on the steering wheel, I accidentally discovered 
+                    the windshield started fogging up. I couldn’t find the defroster on the
+                    large control screen Teslas are so famous for. In desperation, I tapped
+                    the CAR icon but that took me to the settings screen which ended up
+                    being a dead end. Frustrated, I opened the side windows to clear the windshield.
+                    While pushing every button on the steering wheel, I accidentally discovered
                     the voice control and was finally able to get the defroster working. It was such
                     an odd experience I tweeted about how frustrating it was:
                 </p>
                 <figure>
-                    <img src="../img/tweet.png" alt="tweet">
+                    <img class="img_avg" src="../img/tweet.png" alt="tweet">
                 </figure>
                 <p>
-                    Little did I know that Tesla had updated to a new <abbr title="User Interface">UI</abbr> just a few days earlier. 
-                    It’s been more than a bit controversial: A <abbr title="User experience"> UX </abbr> designer had just walked into
-                    a Tesla bar with a hornets nest on the floor.The rather severe name calling 
-                    and ad homimum attacks I got in response to this tweet are unfortunate but 
-                    it is really just a day in the life of Twitter. However, I was surprised by 
+                    Little did I know that Tesla had updated to a new <abbr title="User Interface">UI</abbr> just a few
+                    days earlier.
+                    It’s been more than a bit controversial: A <abbr title="User experience"> UX </abbr> designer had
+                    just walked into
+                    a Tesla bar with a hornets nest on the floor.The rather severe name calling
+                    and ad homimum attacks I got in response to this tweet are unfortunate but
+                    it is really just a day in the life of Twitter. However, I was surprised by
                     the sheer arrogance and Dunning-Kruger on display. These people know literally
                     nothing about human perception or performance. Someone was wrong on the
                     internet! I have no illusions this post will convince the TeslaBros of
@@ -53,41 +59,45 @@
                     to explore. It’s worth going through the problem in a bit more detail.
                 </p>
                 <figure>
-                    <img src="../img/original_v10.png" alt="Original v10 Button Layout">
+                    <img class="img_avg" src="../img/original_v10.png" alt="Original v10 Button Layout">
                     <figcaption>Original v10 Button Layout</figcaption>
                 </figure>
                 <figure>
-                    <img src="../img/original_v11.png" alt="New v11 version">
+                    <img class="img_avg" src="../img/original_v11.png" alt="New v11 version">
                     <figcaption>New v11 version</figcaption>
                 </figure>
                 <p>
-                    The problem isn’t really that complicated: 
-                    originally the defroster icon was visible on the bottom. 
-                    With the latest December 2021 update it is now hidden behind 
-                    the temperature indicator. Tapping the temperature brings up a 
-                    sub-window with the defroster icon. So, yes it’s just 2 taps vs 1, 
+                    The problem isn’t really that complicated:
+                    originally the defroster icon was visible on the bottom.
+                    With the latest December 2021 update it is now hidden behind
+                    the temperature indicator. Tapping the temperature brings up a
+                    sub-window with the defroster icon. So, yes it’s just 2 taps vs 1,
                     but that can’t be that bad right?
                 </p>
             </section>
             <section>
                 <h2>Point 1: 1+1=3</h2>
-                <p>Edward Tufte has this visual rule that 1+1=3. With a single line on the screen, you have just that single object, but adding a second line does something interesting, it adds a third ‘object’ on the screen, the negative space between the two. All good visual designers deeply understand this effect.
-                    In UX design we have a cognitive equivalent. If you have two buttons, there is a third ‘object’ created, the decision a user must make on which button to tap. This cognitive load is invisible and rarely discussed but it can be a real source of confusion.</p>
+                <p>Edward Tufte has this visual rule that 1+1=3. With a single line on the screen, you have just that
+                    single object, but adding a second line does something interesting, it adds a third ‘object’ on the
+                    screen, the negative space between the two. All good visual designers deeply understand this effect.
+                    In UX design we have a cognitive equivalent. If you have two buttons, there is a third ‘object’
+                    created, the decision a user must make on which button to tap. This cognitive load is invisible and
+                    rarely discussed but it can be a real source of confusion.</p>
             </section>
             <section>
                 <h2>Point 2: Icon Standards + Hard Buttons</h2>
                 <p>
-                    1+1=3 is one reason why there are international standards 
-                    for most automotive icons. Common and well understood icons 
+                    1+1=3 is one reason why there are international standards
+                    for most automotive icons. Common and well understood icons
                     reduce cognitive load and help users learn new devices more easily.
                     Here is the “Defrost” icon standard. Even Tesla uses it!
                 </p>
                 <figure>
-                    <img src="../img/defrost.png" alt="defrost icon">
+                    <img class="img_smaller" src="../img/defrost.png" alt="defrost icon">
                 </figure>
                 <p>
-                    This is one reason why hard-buttons are so effective in old-school cars. 
-                    They all use these same standard icons so it’s easier for new users to scan 
+                    This is one reason why hard-buttons are so effective in old-school cars.
+                    They all use these same standard icons so it’s easier for new users to scan
                     across them and find the one you want without any training.
                 </p>
             </section>
@@ -98,60 +108,65 @@
                     I’d like to discuss the pros/cons of digital vs physical buttons at a later time
                     but my high-level point right now is that the previous v10 version actually met
                     my needs. I would have scanned and found the button easily. I’m not anti-Telsa,
-                    I’m anti-v11. 
+                    I’m anti-v11.
                 </p>
             </section>
             <section>
                 <h2>Point 4: Icon, icon, who has the icon?</h2>
                 <p>
-                    But in moving to v11, this icon bar was changed. The defroster icon is now gone. 
-                    No amount of “scanning for a known icon” will work. Instead of a light task anyone can 
-                    do in the moment, it’s replaced with a task that needs training: <b>I have to KNOW where 
-                    it’s hiding. I actually must <abbr title="Read The Fucking Manual"> RTFM </abbr>.</b> I’ll admit, this isn’t the world’s hardest thing to learn. 
+                    But in moving to v11, this icon bar was changed. The defroster icon is now gone.
+                    No amount of “scanning for a known icon” will work. Instead of a light task anyone can
+                    do in the moment, it’s replaced with a task that needs training: <b>I have to KNOW where
+                        it’s hiding. I actually must <abbr title="Read The Fucking Manual"> RTFM </abbr>.</b> I’ll
+                    admit, this isn’t the world’s hardest thing to learn.
                     But when I’m moving at 70mph on a busy highway with the screen fogging up, being a little
-                    bit harder isn’t great. This is why automotive <abbr title="User experience"> UX </abbr> is so hard. It’s the context and the severe
+                    bit harder isn’t great. This is why automotive <abbr title="User experience"> UX </abbr> is so hard.
+                    It’s the context and the severe
                     consequences that make it far more impactful than a poorly designed phone app.
-                    Most importantly, in 99% of cars on the road today, I don’t need to <abbr title="Read The Fucking Manual"> RTFM </abbr> to 
-                    turn steer, accelerate, brake, use the turn signals, or turn on the damn defroster. 
-                    That’s why these things are standardized. There are lots of things I will likely need 
-                    the manual for but not these basics. The v11 design broke this.   
+                    Most importantly, in 99% of cars on the road today, I don’t need to <abbr
+                        title="Read The Fucking Manual"> RTFM </abbr> to
+                    turn steer, accelerate, brake, use the turn signals, or turn on the damn defroster.
+                    That’s why these things are standardized. There are lots of things I will likely need
+                    the manual for but not these basics. The v11 design broke this.
                 </p>
             </section>
             <section>
                 <h2>Point 5: Flat design for the lose</h2>
                 <p>
-                    This new redesign uses a common flat design approach: 
-                    using simple text labels as buttons. When I was scanning for the defrost icon, 
-                    I saw the temperature readout but assumed it couldn’t be a button. In a calmer 
-                    situation, I likely would have explored and tapped on it, but instead, in a 
+                    This new redesign uses a common flat design approach:
+                    using simple text labels as buttons. When I was scanning for the defrost icon,
+                    I saw the temperature readout but assumed it couldn’t be a button. In a calmer
+                    situation, I likely would have explored and tapped on it, but instead, in a
                     slight panic, I tapped on the CAR icon which took me down a dead end.
                     Making the temperature actually look more like a button is one way to
-                    improve this. It would still be 2 taps and I’d still argue more dangerous, 
-                    but at least there would be a stronger visual signal to help guide me towards 
+                    improve this. It would still be 2 taps and I’d still argue more dangerous,
+                    but at least there would be a stronger visual signal to help guide me towards
                     the solution.
                 </p>
             </section>
             <section>
                 <h2>What to do?</h2>
                 <p>
-                    Automotive design is hard. The “move fast and break things” of Tesla is  
-                    perfectly fine for Swipe-Right phone apps but in a car with lives at stake, 
-                    they can’t be so cavalier. It certainly looks pretty to remove half of your 
-                    buttons but this comes at a cost. Visual design isn’t the only variable to 
-                    optimize. My suggestion would be to rank the core functions you want to be 
-                    quickly found and put those in the bottom bar. If that doesn’t work, I’d work 
-                    on a “more” option that guides my eye to these additional hidden buttons. 
-                    Finally if you MUST put it under the temperature label, lose the flat design 
+                    Automotive design is hard. The “move fast and break things” of Tesla is
+                    perfectly fine for Swipe-Right phone apps but in a car with lives at stake,
+                    they can’t be so cavalier. It certainly looks pretty to remove half of your
+                    buttons but this comes at a cost. Visual design isn’t the only variable to
+                    optimize. My suggestion would be to rank the core functions you want to be
+                    quickly found and put those in the bottom bar. If that doesn’t work, I’d work
+                    on a “more” option that guides my eye to these additional hidden buttons.
+                    Finally if you MUST put it under the temperature label, lose the flat design
                     aesthetic and make it feel more like a tapable button.
-                    I want to make it crystal clear that these are my <b>initial</b> thoughts 
-                    and like any proper <abbr title="User experience"> UX </abbr> design, they require prototyping and testing 
-                    to refine them further. The final solution is likely some variation. 
+                    I want to make it crystal clear that these are my <b>initial</b> thoughts
+                    and like any proper <abbr title="User experience"> UX </abbr> design, they require prototyping and
+                    testing
+                    to refine them further. The final solution is likely some variation.
                     I’m not suggesting a perfect solution now, but a user-centered goal that
-                    I’m trying to achieve. Then comes the hard work of testing and retesting 
+                    I’m trying to achieve. Then comes the hard work of testing and retesting
                     to make sure you’ve got it right. You can’t cut corners.
                 </p>
             </section>
         </article>
     </div>
 </body>
+
 </html>
