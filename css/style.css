@@ -16,11 +16,19 @@ h1 {
 
 h1,
 h2,
-p {
+p, caption {
     font-family: sans-serif;
     justify-content: center;
     text-align: center;
     margin: 10px;
+}
+
+form {
+    justify-content: center;
+    text-align: center;
+}
+caption {
+    font-size: 24px;
 }
 
 figure {
@@ -123,10 +131,14 @@ li a:hover {
         overflow: hidden;
         display: block;
     }
+
+    .mobile_img_responsive {
+        display: none;
+    }
 }
 
 table, th, td {
-    /* border:1px solid black; */
+    border:1px solid black;
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -134,4 +146,26 @@ table, th, td {
 
   th > img {
       width: 20%;
+  }
+
+  table {
+      background-color: grey;
+  }
+
+  textarea{
+      resize: none;
+      width: 100%;
+  }
+
+  input[type="submit"] {
+      background-color: grey;
+      width: 15%;
+
+  }
+
+  input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
   }

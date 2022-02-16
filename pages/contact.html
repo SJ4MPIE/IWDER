@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="desktop_nav">
+        <ul>
+            <li><a href="../index.html">UX design is becoming a commodity </a></li>
+            <li><a href="article_1.html">A UX designer walks into a Tesla Bar</a></li>
+            <li><a href="article_2.html">Prove yourself wrong</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile_nav">
+        <ul>
+            <li><a href="../index.html">UX design is becoming a commodity </a></li>
+            <li><a href="article_1.html">A UX designer walks into a Tesla Bar</a></li>
+            <li><a href="article_2.html">Prove yourself wrong</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Contact us</h1>
+    <div class="container">
+        <form action="message_sent.html">
+            <label for="fname">First name:</label><br>
+            <input type="text" pattern="[a-zA-Z]+" id="fname" name="fname" placeholder="John" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" pattern="[a-zA-Z]+" id="lname" name="lname" placeholder="Doe" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+            <textarea name="message" pattern="[a-z,!:?.@]+" cols="187" rows="20" placeholder="Your message" required></textarea>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+</html>
