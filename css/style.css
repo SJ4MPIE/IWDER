@@ -13,7 +13,6 @@ h1 {
     font-size: 28px;
 }
 
-
 h1,
 h2,
 p, caption {
@@ -71,22 +70,28 @@ img {
 }
 
 .desktop_nav ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #000;
     text-align: center;
+    flex-direction: column;
 
 }
 
 .desktop_nav {
-    height: 50px;
+    display: flex;
+    width: 10%;
+    position: fixed;
+    height: 200vh;
     background-color: #000;
+    flex-direction: column;
 }
 
 .desktop_nav li {
-    float: left
+    margin-top: 10px;
 }
 
 .desktop_nav li a {
@@ -94,9 +99,9 @@ img {
     color: white;
     text-align: center;
     text-decoration: none;
-    margin: 10px;
-    padding: 20px;
+    margin: 20px;
     font-family: sans-serif;
+    font-size: 13px;
 }
 
 li a:hover {
@@ -110,31 +115,6 @@ li a:hover {
 
 .img_avg {
     width: 40%;
-}
-
-@media only screen and (max-width: 1000px) {
-    img {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    img {
-        width: 100%;
-    }
-
-    .desktop_nav {
-        display: none;
-    }
-
-    .mobile_nav {
-        overflow: hidden;
-        display: block;
-    }
-
-    .mobile_img_responsive {
-        display: none;
-    }
 }
 
 table, th, td {
@@ -169,3 +149,28 @@ table, th, td {
     margin: 8px 0;
     box-sizing: border-box;
   }
+
+  @media only screen and (max-width: 1000px) {
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+
+    .desktop_nav {
+        display: none;
+    }
+
+    .mobile_nav {
+        overflow: hidden;
+        display: block;
+    }
+
+    .mobile_img_responsive {
+        display: none;
+    }
+}
