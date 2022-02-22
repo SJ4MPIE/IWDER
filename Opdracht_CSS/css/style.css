@@ -1,0 +1,25 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: auto;
+}
+
+article {
+    background-color: #BF9270;
+    margin: 10px;
+    padding: 20px;
+    flex-basis: 400px;
+    border-radius: 15px;
+    
+}
+
+
+h2, p {
+    font-family: sans-serif;
+    color: #FFEDDB;
+}
