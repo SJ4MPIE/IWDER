@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+header {
+    height: 80vh;
+    background: url("../img/banner.jpg") no-repeat center center fixed;
+    align-items: center;
+    position: relative;
+}
+
+header>h1 {
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background-color: #000;
+}
+
+header>button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #323232;
+    color: #fff;
+    width: 15%;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+header>button:hover {
+    cursor: pointer;
+    background-color: #3d3d3d;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+
+}
+
+figure>p {
+    width: 80%;
+}
+
+img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    margin: 15px;
+    position: relative;
+}
+
+footer>p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header>button {
+        width: 40%;
+    }
+
+    header>h1 {
+        font-size: 24px
+    }
+
+}
