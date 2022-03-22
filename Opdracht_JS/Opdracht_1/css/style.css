@@ -52,12 +52,20 @@ header>button:hover {
     background-color: #3d3d3d;
 }
 
-main>button {
+
+nav>button {
     margin-top: 15px;
     background-color: #323232;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
 }
 
 main {
@@ -122,4 +130,24 @@ footer>p {
         font-size: 24px
     }
 
+}
+
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox .checked {
+display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .checked
+{
+display: inline-block;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .unchecked
+{
+display: none;
+}
+
+.fa-heart {
+    color: red;
+    font-size: 24px;
 }

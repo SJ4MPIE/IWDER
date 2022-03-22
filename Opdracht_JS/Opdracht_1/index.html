@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS opdracht 3</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f0e71dc43c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,12 +18,16 @@
         <h1 class="welcome_heading">Afhaal restaurant</h1>
         <button type="button" name="menu" onclick="smoothScroll('menu')">Bekijk het menu</button>
     </header>
-    <main>
+    <nav>
         <button  type="button" name="Pizza" data-button="pizza">Pizza</button>
         <button  type="button" name="Pasta" data-button="pasta">Pasta</button>
         <button  type="button" name="Lasagne" data-button="lasagne">Lasagne</button>
+        <button  type="button" name="Favourite" data-button="favorite">Favourite</button>
+    </nav>
 
-        <figure class="js--card-pizza" data-dish="pizza">
+    <main>
+
+        <figure class="js--card" data-dish="pizza" data-favorite>
             <img src="img/Pizza-Margherita.jpg" alt="Foto van pizza margherita">
             <h2>Pizza margherita</h2>
             <p>
@@ -32,8 +37,13 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
-        <figure id="menu" class="js--card-pizza" data-dish="pizza">
+        <figure id="menu" class="js--card" data-dish="pizza" data-favorite>
             <img src="img/pepperoni-pizza.jpg" alt="Foto van pizza pepperoni">
             <h2>Pizza pepperoni</h2>
             <p>
@@ -43,8 +53,13 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
-        <figure class="js--card-pizza" data-dish="pizza">
+        <figure class="js--card" data-dish="pizza" data-favorite>
             <img src="img/Pizza-Hawaiian.jpg" alt="Foto van pizza hawaii">
             <h2>Pizza hawaii</h2>
             <p>
@@ -54,8 +69,13 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
-        <figure class="js--card" data-dish="pasta">
+        <figure class="js--card" data-dish="pasta" data-favorite>
             <img src="img/pasta_carbonara.jpg" alt="Foto van pasta carbonara">
             <h2>Pasta carbonara</h2>
             <p>
@@ -65,8 +85,13 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
-        <figure class="js--card" data-dish="pasta">
+        <figure class="js--card" data-dish="pasta" data-favorite>
             <img src="img/pasta_bolognese.jpg" alt="Foto van pasta bolognese">
             <h2>Pasta bolognese</h2>
             <p>
@@ -76,8 +101,13 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
-        <figure class="js--card" data-dish="pasta"> 
+        <figure class="js--card" data-dish="pasta" data-favorite> 
             <img src="img/pasta_funghi.jpg" alt="Foto van pasta funghi">
             <h2>Pasta funghi</h2>
             <p>
@@ -87,8 +117,13 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
-        <figure class="js--card" data-dish="lasagne">
+        <figure class="js--card" data-dish="lasagne" data-favorite>
             <img src="img/lasagne_bolognese.jpg" alt="Foto van lasagne bolognese">
             <h2>Lasagne bolognese</h2>
             <p>
@@ -98,8 +133,13 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
-        <figure class="js--card" data-dish="lasagne">
+        <figure class="js--card" data-dish="lasagne" data-favorite>
             <img src="img/lasagne_zalm.jpeg" alt="Foto van lasagne zalm">
             <h2>Lasagne zalm</h2>
             <p>
@@ -109,8 +149,13 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox" data-favorite>
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
-        <figure class="js--card" data-dish="lasagne">
+        <figure class="js--card" data-dish="lasagne" data-favorite>
             <img src="img/lasagne_vegatarisch.jpeg" alt="Foto van lasagne vegatarisch">
             <h2>Lasagne vegatarisch</h2>
             <p>
@@ -120,6 +165,11 @@
                 accusamus commodi illum nam dignissimos quo provident.
                 Nam dolorem debitis repellendus unde rerum doloremque pariatur?
             </p>
+            <label class="custom-checkbox">
+                <input type="checkbox" class="checkbox_fav" onchange="addFavourite()" data-cb="favourite">
+                <i class="fa-solid fa-heart checked"></i>
+                <i class="fa-regular fa-heart unchecked"></i>
+            </label>
         </figure>
     </main>
     <footer>

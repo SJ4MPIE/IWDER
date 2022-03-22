@@ -1,6 +1,10 @@
 var pizza_button_state = 0;
 var pasta_button_state = 0;
 var lasagne_button_state = 0;
+var favorite_button_state = 0;
+const cardList = document.getElementsByClassName('js--card')
+const favoriteButton = document.getElementsByClassName('checkbox_fav');
+let favoriteCards = document.querySelectorAll(['[data-favorite="favorite"]']);
 
 window.onload = () => {
     //evenrtlistener aanmaken voor buttonclicks
@@ -86,10 +90,45 @@ function filter(type) {
         button.forEach(button => {
             button.style.backgroundColor = '#323232';
         })
+        lasagne__button_state = 0
+    }
+
+    else if (type == "favorite" && favorite_button_state == 0 ) {
+        var unfavorite = document.querySelectorAll('[data-favorite="unfavorite"]');
+        var button = document.querySelectorAll("[data-button='favorite']");
+        unfavorite.forEach(fav => {
+            fav.style.display = 'none';
+        })
+        button.forEach(button => {
+            button.style.backgroundColor = '#c2213c';
+        })
+        favorite_button_state = 1
+    }
+
+    else if (type == "favorite" && favorite_button_state == 1){
+        console.log('hoi')
+        var unfavorite = document.querySelectorAll('[data-favorite="unfavorite"]');
+        var button = document.querySelectorAll("[data-button='favorite']");
+        unfavorite.forEach(fav => {
+            fav.style.display = 'block';
+        })
+        button.forEach(button => {
+            button.style.backgroundColor = '#323232';
+        })
+        favorite_button_state = 0
+    }
 
     }
 
-    console.log(pasta_button_state);
+function addFavourite() {
 
+    const checkboxes = document.querySelectorAll("[data-cb]");
+
+    for(let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            cardList[i].setAttribute("data-favorite", "favorite")
+        } else {
+            cardList[i].setAttribute("data-favorite", "unfavorite")
+        }
+    }
 }
-    
